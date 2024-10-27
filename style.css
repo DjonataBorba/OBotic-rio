@@ -1,0 +1,420 @@
+:root{
+  --main-color:#0f4d2e;
+  --black:#13131a;
+  --white:#fff;
+  --bg:#26987e;
+  --border: 0.1rem solid rgba(255,255,255,0.3)
+  font-size: 10px;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline:none;
+  text-decoration: none;
+  text-transform:capitalize;
+  transition: 0.2s linear;
+  box-sizing:border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background-color: var(--bg);
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  margin-bottom: var(--border);
+  background: var(--bg);
+}
+
+.logo{
+  width: 120px;
+  height: 120px;
+}
+
+section{
+  padding: 15rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.faixa{
+  background-color: #0f4d2e;
+}
+
+h4{
+display: flex;
+justify-content: center;
+margin-bottom: 5rem;
+color: #fff;
+font-size: 30px;
+}
+
+.creme{
+  margin-top: 40px;
+}
+
+.navbar a{
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color:var(--white);
+  transition: 0.2s;
+}
+
+.navbar a:hover{
+  color: var(--main-color);
+  border-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  transform: scale(1.05);
+}
+
+.menu-mobile{
+  background-color:#161616;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+}
+.menu-mobile.abrir-menu{
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+   display: block;
+}
+
+.btn-abrir-menu{
+  color: #00ff08;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-mobile .btn-fechar svg{
+  color: #00ff08;
+}
+
+.menu-mobile .btn-fechar{
+  padding: 20px 4%;
+}
+
+.menu-mobile nav a{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200px;
+  padding: 25px 8%;
+  transition: 0.2s;
+  cursor: pointer
+}
+
+.menu-mobile nav a:hover{
+  background-color:#00ff08;
+  transform: scale(1.05);
+}
+
+.overlay-menu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 888;
+  background-color: black;
+  opacity: 0.5;
+  display: none;
+}
+
+.icons img{
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.icons img:hover{
+  width: 30px;
+  height: 30px;
+}
+
+.btn{
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.btn:hover{
+   letter-spacing: 0.7px;
+}
+
+.btn-price{
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.btn-price:hover{
+letter-spacing: 0.7px;
+}
+
+.home-container{
+  background: url(./img/img/home-img.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home-container section{
+  display: flex;
+  align-items: center;
+  min-height:100vh;
+}
+
+.content{
+  max-width: 60rem;
+}
+
+.content h3{
+  color: var(--white);
+  font-size: 4rem;
+}
+
+.content p{
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.title{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: -15%;
+}
+
+u{
+  text-decoration: underline;
+}
+
+.tittle{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.title span{
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  background-color: var(--black); 
+  gap: 1.5rem;
+}
+
+.about .row .content{
+  padding: 2rem;
+}
+
+.about .row .content h3{
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.about .row .content p{
+  font-size: 1rem;
+  color: var(--white);
+  padding: 1rem 0;
+  line-height: 1rem;
+}
+
+.container-image{
+  height: 30rem;
+  width: 40rem;
+}
+
+.box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box{
+  text-align: center;
+  border: var(--border);
+  padding: 5rem;
+  cursor:pointer;
+}
+
+.menu .box-container .box img{
+  height: 5rem;
+}
+
+.menu .box-container .box h3{
+  color: var(--white);
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box:hover>*{
+  color: var(--black);
+}
+
+.menu .box-container .box:hover{
+  background-color: var(--white);
+}
+
+.review .box-container .box{
+  border:var(--border);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+  font-size: 1.5rem;
+  color: var(--white);
+  padding:2rem 0;
+  line-height: 1.8;
+  font-weight: lighter;
+}
+
+.review .box-container .box h3{
+  color: var(--white);
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.local-cafe{
+ height: 500px;
+ width: 700px;
+}
+
+.address{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.share{
+  text-align: center;
+  padding: 1rem 0;
+}
+
+ .share img{
+  margin: 0.2rem;
+  cursor:pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.share img:hover{
+  background-color: var(--main-color);
+}
+
+button{
+  background-color: var(--bg);
+  color: white;
+  padding:7px 80px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario{
+  position: fixed;
+  bottom: 15rem;
+  width: 600px;
+  height: 55%;
+  z-index: 993;
+  left: -200%;
+  transition: 1.5s;
+}
+
+@media screen and (max-width: 980px){
+.navbar a{
+   display: none;
+   }
+ 
+  .btn-abrir-menu{
+    display: block;
+  }
+
+  .icons img{
+    display: none;
+  }
+
+  .content h3{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .content h4{
+    text-align: center;
+  }
+
+  .btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: -50px;
+  }
+
+  .btn-price{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+
+  .title{
+    margin-top: -15rem;
+    font-size: 45px;
+  }
+
+  .box-container .box img{
+   text-align: center;
+  }
+  .formulario{
+    position: fixed;
+    bottom: 15rem;
+    width: 500px;
+    height: 55%;
+    z-index: 993;
+    left: -200%;
+    transition: 1.5s;
+  }
+}

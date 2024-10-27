@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="x-ua-compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initil=scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title> Revendedora O´Boticário </title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+     <header class="header">
+          <section>
+               <a href="#">
+                    <img src="./img/botica-logo.png" alt="logo" class="logo">
+               </a>
+
+               <nav class="navbar">
+                    <a href="#home">Inicio</a>
+                    <a href="#products">Produtos</a>
+                    <a href="#review">lançamentos</a>
+                    <a href="#address">Endereço</a>
+               </nav>
+
+               <div class="icons">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/20/ffffff/shopping-cart.png"
+                         alt="shopping-cart" onclick="aparecerFormulario()" />
+               </div>
+
+               <div class="btn-abrir-menu" id="btn-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                         class="bi bi-list" viewBox="0 0 16 16">
+                         <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+               </div>
+
+               <div class="menu-mobile" id="menu-mobile">
+                    <div class="btn-fechar">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                              class="bi bi-x-lg" viewBox="0 0 16 16">
+                              <path
+                                   d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                         </svg>
+                    </div>
+
+                    <nav>
+                         <a href="#home">Inicio</a>
+                         <a href="#products">Produtos</a>
+                         <a href="#review">lançamentos</a>
+                         <a href="#address">Endereço</a>
+                    </nav>
+
+               </div>
+
+               <div class="overlay-menu" id="overlay-menu"></div>
+
+          </section>
+     </header>
+
+     <div class="home-container">
+          <section id="home">
+               <div class="content">
+                    <h3>Thálita Revendedora OBoticário</h3>
+                    <h4>O´Boticário, Produtos de Qualidade com Preços incríveis</h4>
+
+                    <button class="btn" onclick="aparecerFormulario()"> adquira o Seu Agora </button>
+
+               </div>
+          </section>
+     </div>
+
+     <section class="products" id="products">
+
+          <h2 class="title"><u> Produtos </u><span></span></h2>
+          <div class="faixa">
+               <h4>Perfumes</h4>
+          </div>
+          <div class="box-container">
+               <div class="box">
+                    <img src="./img/egeo-feminino.webp" alt="item-1">
+                    <h3> dolce colors desodorante colônia 90ml</h3>
+                    <p>A fragrância feminina que é tão irresistivel quanto um doce te convida a seduzir com um toque de
+                         diverão.</p>
+
+                    <a class="btn-price"> R$ 124,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/quasar.webp" alt="item-2">
+                    <h3> Quasar Deep Blue desodorante Colonia 100ml</h3>
+                    <p>Desodorante Colônia masculina que apresenta a versão intena, sofisticada e elegante do DNA de
+                         Quasar.</p>
+
+                    <a class="btn-price"> R$ 119,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/liz.webp" alt="item-3">
+                    <h3> Kit Presente Natal Liz (2 itens)</h3>
+                    <p>Liz, uma fragrância feminina intensa e marcante, traduz o poder das madeiras combinado à
+                         delicadeza e sensualidade de um floral arrebatador. Sua assinatura é a exclusiva Base de Laire
+                         Iris Nobre — uma fórmula secreta que traz a união do óleo da sofisticada Íris Absoluta Francesa
+                         com a força do Vetiver de Madagascar.</p>
+                    <a class="btn-price">R$159,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/florata.webp" alt="item-4">
+                    <h3> Kit Presente Floratta Blue (3 itens)</h3>
+                    <p>Floratta Blue Desodorante Colônia é um clássico da perfumaria feminina do Boticário! Com
+                         fragrância leve e confortável, traz notas florais e Musk. Para aquela mulher única que
+                         transmite serenidade e tranquilidade.</p>
+
+                    <a class="btn-price"> R$174,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/malbec.webp" alt="item-5">
+                    <h3>malbec desodorante Colonia 100ml</h3>
+                    <p>Malbec desodorante Colônia é uma Fragrância masculina inesquecível e ideal para o homem sedutor e
+                         marcante.</p>
+                    <a class="btn-price"> R$199,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/nativaspa.webp" alt="item-6">
+                    <h3>Combo Nativa Spa Cereja Rouge: Loção Corporal 400ml + Sabonete Líquido 250ml + Body Splash 200ml
+                    </h3>
+                    <p>O Combo Nativa Spa Cereja Rouge traz itens de corpo e banho com o efeito pele de cereja: a
+                         combinação do Óleo De Quinoa* + Extrato De Cereja que entrega melhora na textura e firmeza da
+                         pele, te deixando comprovadamente mais irresistível** com exclusivo acorde Sexy Cherry.Ideal
+                         para fazer parte do dia a dia ou daquela ocasião especial, vai fazer parte do seu momento de
+                         autocuidado:
+                    </p>
+                    <a class="btn-price"> R$177,70</a>
+               </div>
+          </div>
+          <div class="faixa">
+               <h4 class="creme"><i>Make</i></h4>
+          </div>
+          <div class="box-container">
+               <div class="box">
+                    <img src="./img/batom.webp" alt="item-1">
+                    <h3> Batom Vermelho Red Cherry Cremoso Cereja Rouge 3,6g</h3>
+                    <p>Batom vermelho com embalagem personalizada e até 48h de hidratação, volume e preenchimento para
+                         os lábios.</p>
+
+                    <a class="btn-price"> R$ 47,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/base.webp" alt="item-2">
+                    <h3> Base liquida Glycolic TX cor 270 30g</h3>
+                    <p>Com nano ácido glicólico, ácido tranexâmico e FPS 50, é a primeira base do mundo que reduz
+                         manchas solares.</p>
+
+                    <a class="btn-price"> R$ 57.50</a>
+               </div>
+               <div class="box">
+                    <img src="./img/paleta.webp" alt="item-3">
+                    <h3>Palette Multifuncional Pink Petals 15g </h3>
+                    <p>A Palette traz 18 cores de sombras impactantes send que 3 delas podem ser usadas também como
+                         iluminador.</p>
+                    <a class="btn-price">R$167,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/lapis.webp" alt="item-4">
+                    <h3> Lápis Retrátil para Olhos Preto Make B.</h3>
+                    <p>O Lápis Retrátil para Olhos Preto Make B. é ideal para criar um traço fino e preciso para deixar
+                         a maquiagem nos olhos com o estilo que você preferir! Prático e versátil.
+                    </p>
+
+                    <a class="btn-price"> R$62,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/caneta.webp" alt="item-5">
+                    <h3>Caneta para Sobrancelha Microblading UP Brow Media Make B. 1 ml</h3>
+                    <p>A Make B. Caneta para Sobrancelha Microblading UP Brow é ideal para quem busca as sobrancelhas
+                         perfeitas.
+                         A Caneta para Sobrancelha Microblanding UP Brow reproduz o preenchimento fio a fio das
+                         sobrancelhas de maneira indolor, garante aparência natural e é à prova de borrões.
+                         Possui ponteira pontiaguda que permite um delineado preciso nos acabamentos, desenhando novos
+                         fios e tingindo os existentes.</p>
+                    <a class="btn-price"> R$72,90</a>
+               </div>
+               <div class="box">
+                    <img src="./img/combo.jpg" alt="item-6">
+                    <h3>Combo Make B. Cereja Rouge: Paleta Mulfuncional 73,8g + Batom Vermelho 3,6g + Gloss Labial
+                         Vermelho 5ml</h3>
+                    <p>O Combo Make B. Cereja Rouge traz dois itens de maquiagem Make B. para a boca, para criar
+                         infinitos looks com luxo e sofisticação na icônica cor vermelho</p>
+                    <a class="btn-price"> R$329,70</a>
+               </div>
+          </div>
+     </section>
+
+     <div class="address" id="address">
+          <h2 class="tittle">endereço</h2>
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!4v1729561613158!6m8!1m7!1swqNKLwooBNfjjJSLh03Acg!2m2!1d-28.21390237534741!2d-48.70299442070093!3f290.722982842595!4f-5.500322168183629!5f0.5892615843144405"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+     <div class="share">
+          <a href="https://www.instagram.com/djonata.borba/"> <img width="50" height="50"
+                    href="https://www.instagram.com/djonata.borba/"
+                    src="https://img.icons8.com/ios-glyphs/50/ffffff/instagram-new.png" alt="instagram-new" /> </a>
+          <a href="https://w.app/d7ZhgY"> <img width="50" height="50"
+                    src="https://img.icons8.com/ios-glyphs/50/ffffff/whatsapp.png" alt="whatsapp" /> </a>
+          <a href="https://www.facebook.com/djonata.borba"> <img width="50" height="50"
+                    src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="facebook-new" /> </a>
+     </div>
+     </section>
+
+     <div class="formulario">
+          <button onclick="desaparecerFormulario()">Fechar</button>
+          <script type="text/javascript" src="https://form.jotform.com/jsform/242958151916060"></script>
+     </div>
+
+     <div class="formulario">
+          <button onclick="desaparecerFormulario()">Fechar</button>
+          <script type="text/javascript" src="https://form.jotform.com/jsform/242958151916060"></script>
+     </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
