@@ -380,11 +380,11 @@ button{
   .content h3{
     font-size: 3rem;
     margin-bottom: 30px;
-    text-align: center;
+    text-align:center;
   }
 
   .content h4{
-    text-align: center;
+    text-align:center;
   }
 
   .btn{
